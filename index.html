@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Astra Weather App</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="p-2">
+   <div class="container border border-black bg-cyan-400 rounded my-12">
+     <div class="input-holder my-4 flex justify-between mx-3 p-1 rounded bg-transparent backdrop-blur">
+      <input type="text" placeholder="Enter City Name" class="  -black rounded-xl p-2 font-black h-10 border border-black w-64 input-box focus:outline-purple-700">
+      <span class="bg-white p-2 rounded-full w-10 border border-black">
+      <img src="./source/search.png" class="h-6" onclick="startProcess()">
+      </span>
+      </div>
+     <div class="hero-data-holder flex flex-col justify-center mt-5">
+      <div class="flex justify-center">
+      <span class="icon w-48 h-48 p-2 text-center">
+      <img src="./source/images/noimage.png" class="h-full w-full weather-icon rounded">
+      </span>
+      </div>
+      <div class="display flex flex-col text-center text-white">
+        <span class="text-white text-xl condition">Chill Weather</span>
+        <span class="text-4xl temp">0°c</span>
+        <span class="text-3xl location mt-1">India</span>
+      </div>
+      
+  <div class="footer-data-holder p-1 px-4 flex justify-evenly items-center my-5 flex-wrap">
+  <div class="first-info flex justify-between">
+    <div class="img-holder inline-block overflow-hidden">
+      <img src="./source/humidity.gif" class="h-7 mt-1 rounded-full">
+    </div>
+    <div class="text-holder text-white">
+      <div class="text-xl ml-1 humidity">0%</div>
+      <div class="text-xs ml-1">Humidity</div>
+    </div>
+  </div>
+  
+    <div class="second-info flex">
+    <div class="img-holder inline-block overflow-hidden">
+      <img src="./source/wind.gif" class="h-7 mt-1 rounded-full">
+    </div>
+    <div class="text-holder text-white">
+      <div class="text-xl ml-2 wind-speed">0km/h</div>
+      <div class="text-xs ml-2">Wind Speed</div>
+    </div>
+  </div>
+  
+    <div class="first-info flex justify-between">
+    <div class="img-holder inline-block overflow-hidden">
+      <img src="./source/vision.gif" class="h-7 mt-1 rounded-full">
+    </div>
+    <div class="text-holder text-white">
+      <div class="text-xl ml-1 visibility">0 km</div>
+      <div class="text-xs ml-1">Visibility</div>
+    </div>
+  </div>
+</div>
+     </div>
+    </div>
+     </div>
+    
+    <div class="popup-container absolute top-0 w-full h-full flex items-center justify-center backdrop-blur hidden p-2">
+      <div class="popup flex border rounded min-w-full m-5 p-4 text-center items-center flex-col border mx-2">
+        <span class="font-black popup-msg"></span>
+        <a href="https://astrairix.xyz" target="_blank">
+        <button class="w-32 h-12 mt-4 rounded bg-red-400 popup-btn" >Don't click me!</button>
+        </a>
+      </div>
+    </div>
+    
+  </body>
+  <script src="./index.js"></script>
+</html>
